@@ -78,25 +78,16 @@ In the following example, the file *adencrypt.exe* starts at cluster #8, its siz
     2012/03/14 19:54:44:000 a----    8005   31744 /da7zip.dll
     2014/11/28 17:46:50:000 a----    1189 12309315 /volatility_2.4.win.standalone.zip
     2015/02/16 11:26:34:000 -d---       7    4096 /langs
-    2015/09/18 10:49:12:000 a----       0       0 /nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entr
-    ees 0xc1 - Copie (5) - Copie.txt
+    2015/09/18 10:49:12:000 a----       0       0 /nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entrees 0xc1 - Copie (5) - Copie.txt
     2011/01/20 19:15:10:000 a----    8510  946176 /cximage.dll
-    2015/09/18 10:49:12:000 a----       0       0 /nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entr
-    ees 0xc1 - Copie (4).txt
-    2015/09/18 10:49:12:000 a----       0       0 /nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entr
-    ees 0xc1 - Copie (4) - Copie.txt
-    2015/09/18 10:49:12:000 a----       0       0 /nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entr
-    ees 0xc1 - Copie (6) - Copie.txt
-    2015/09/18 10:49:12:000 a----       0       0 /nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entr
-    ees 0xc1 - Copie (7) - Copie.txt
-    2015/09/18 10:49:12:000 a----       0       0 /nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entr
-    ees 0xc1 - Copie (8) - Copie.txt
-    2015/09/18 10:49:12:000 a----       0       0 /nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entr
-    ees 0xc1 - Copie (9) - Copie.txt
-    2015/09/18 10:49:12:000 a----       0       0 /nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entr
-    ees 0xc1 - Copie (10) - Copie.txt
-    2015/09/18 10:49:12:000 a----       0       0 /nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entr
-    ees 0xc1 - Copie (11) - Copie.txt
+    2015/09/18 10:49:12:000 a----       0       0 /nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entrees 0xc1 - Copie (4).txt
+    2015/09/18 10:49:12:000 a----       0       0 /nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entrees 0xc1 - Copie (4) - Copie.txt
+    2015/09/18 10:49:12:000 a----       0       0 /nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entrees 0xc1 - Copie (6) - Copie.txt
+    2015/09/18 10:49:12:000 a----       0       0 /nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entrees 0xc1 - Copie (7) - Copie.txt
+    2015/09/18 10:49:12:000 a----       0       0 /nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entrees 0xc1 - Copie (8) - Copie.txt
+    2015/09/18 10:49:12:000 a----       0       0 /nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entrees 0xc1 - Copie (9) - Copie.txt
+    2015/09/18 10:49:12:000 a----       0       0 /nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entrees 0xc1 - Copie (10) - Copie.txt
+    2015/09/18 10:49:12:000 a----       0       0 /nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entrees 0xc1 - Copie (11) - Copie.txt
     2014/12/10 13:31:24:000 a----    8021  407856 /NEWS.txt
     2013/03/13 15:04:48:000 a----    8973 2481152 /perl516.dll
     2013/12/17 10:44:38:000 a----     400 1613956 /CSIRT_setting_up_guide_ENISA-FR.pdf
