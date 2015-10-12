@@ -1,0 +1,66 @@
+Le type du systŠme de fichiers est exFAT.
+Le num‚ro de s‚rie du volume est CC01-B183
+Windows v‚rifie les fichiers et les dossiers...
+Le nom de volume est EOS_DIGITAL3.
+V‚rification des fichiers et des dossiers termin‚e.
+Windows a v‚rifi‚ le systŠme de fichiers sans trouver de problŠme.
+
+     30246 Ko d'espace disque au total.
+     26604 Ko dans 23 fichiers.
+        12 Ko dans 3 index.
+         0 Ko dans des secteurs d‚fectueux.
+         8 Ko utilis‚s par le systŠme.
+      3622 Ko disponibles sur le disque.
+
+      2048 octets dans chaque unit‚ d'allocation.
+     15123 unit‚s d'allocation au total sur le disque.
+      1811 unit‚s d'allocation disponibles sur le disque.
+
+C:\Users\lclevy\Desktop\afti2>dir /S e:
+ Le volume dans le lecteur E s'appelle EOS_DIGITAL3
+ Le numéro de série du volume est CC01-B183
+
+ Répertoire de E:\
+
+23/08/2012  22:13           231 936 adencrypt_gui.exe
+23/08/2012  22:12             7 680 adfs_globals.dll
+23/08/2012  22:12            70 144 ADIsoDLL.dll
+23/08/2012  22:13           377 856 adshattrdefs.dll
+17/09/2015  21:25    <REP>          empty_dir
+17/09/2015  21:25                12 new_file.txt
+14/03/2012  19:54            31 744 da7zip.dll
+28/11/2014  17:46        12 309 315 volatility_2.4.win.standalone.zip
+16/02/2015  11:26    <REP>          langs
+18/09/2015  10:49                 0 nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entrees 0xc1 -Copie (5) - Copie.txt
+20/01/2011  19:15           946 176 cximage.dll
+18/09/2015  10:49                 0 nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entrees 0xc1 -Copie (4).txt
+18/09/2015  10:49                 0 nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entrees 0xc1 -Copie (4) - Copie.txt
+18/09/2015  10:49                 0 nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entrees 0xc1 -Copie (6) - Copie.txt
+18/09/2015  10:49                 0 nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entrees 0xc1 -Copie (7) - Copie.txt
+18/09/2015  10:49                 0 nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entrees 0xc1 -Copie (8) - Copie.txt
+18/09/2015  10:49                 0 nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entrees 0xc1 -Copie (9) - Copie.txt
+18/09/2015  10:49                 0 nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entrees 0xc1 -Copie (10) - Copie.txt
+18/09/2015  10:49                 0 nom de fichier vraiment tres tres tres long pour tenir sur plusieurs entrees 0xc1 -Copie (11) - Copie.txt
+10/12/2014  13:31           407 856 NEWS.txt
+13/03/2013  15:04         2 481 152 perl516.dll
+17/12/2013  10:44         1 613 956 CSIRT_setting_up_guide_ENISA-FR.pdf
+20/09/2015  20:35         8 640 336 Andriller_v2.5.0.2_Setup.exe
+              21 fichier(s)       27 118 163 octets
+
+ Répertoire de E:\empty_dir
+
+17/09/2015  21:25    <REP>          .
+17/09/2015  21:25    <REP>          ..
+               0 fichier(s)                0 octets
+
+ Répertoire de E:\langs
+
+16/02/2015  11:26    <REP>          .
+16/02/2015  11:26    <REP>          ..
+20/08/2012  22:41             6 144 chs_adencrypt.dll
+20/08/2012  22:41           104 448 chs_adshattrdefs.dll
+               2 fichier(s)          110 592 octets
+
+     Total des fichiers listés :
+              23 fichier(s)       27 228 755 octets
+               6 Rép(s)       3 708 928 octets libres

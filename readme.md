@@ -205,7 +205,7 @@ With debug level 1 (**-d 1**), MBR, VBR and Bitmap information is shown:
     0x85:  i=    400 l=1613956 a---- m=2013/12/17 10:44:38:000 a=2015/09/25 14:24:36:000 b=2015/09/25 14:24:36:124 sc=4 nfc /CSIRT_setting_up_guide_ENISA-FR.pdf
     0x85:  i=  10185 l=8640336 a---- m=2015/09/20 20:35:54:000 a=2015/09/25 15:03:46:000 b=2015/09/25 15:03:46:081 sc=3 nfc /Andriller_v2.5.0.2_Setup.exe
 
-Within the output above, the first column is the type of directory record. 0x81 is type for Bitmap record, 0x82 type for Upcase record. 0x85 is normal record. A file is oftenly composed of 3 different records: one 0x85 record, one 0xC0 record and one or more 0xC1 records. Each record is 32 bytes long. With debug level 1 (**-d 1**), only 'aggregated entries' starting with 0x85 records are shown, plus 'virtual entries' Bitmap and Upcase. To display all records types (even deleted ones), debug level 2 must be used (**-d 2**).
+Within the output above, the first column is the type of directory record. 0x81 is type for Bitmap record, 0x82 type for Upcase record. 0x85 is normal record. A file entry is often composed of 3 different records: one 0x85 record, one 0xC0 record and one or more 0xC1 records. Each record is 32 bytes long. With debug level 1 (**-d 1**), only 'aggregated entries' starting with 0x85 records are shown, plus 'virtual entries' Bitmap and Upcase. To display all records types (even deleted ones), debug level 2 must be used (**-d 2**).
     
 The column with *i=* contains the first cluster number, which can be used by the **istat** or **icat** command. In the following example, we can extract the .zip archive containing the windows standalone version of volatility:
 
