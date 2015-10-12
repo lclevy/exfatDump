@@ -735,7 +735,7 @@ elif debugLevel>0:
     
 if command=='icat' or command=='istat':
   #check cluster number is inside cluster Area
-  if (cluster<FIRST_CLUSTER_NUMBER or cluster>vbr[ 'nbClusters' ]):
+  if (cluster<FIRST_CLUSTER_NUMBER or cluster>vbr[ 'nbClusters' ]+FIRST_CLUSTER_NUMBER):
     print 'error: cluster out of range'
     f.close()
     sys.exit()
