@@ -232,12 +232,12 @@ SHA1 for extracted content is:
     >python exfat_dump.py icat -h exfat12.001 8973
     47f8c6549a641e2f97b121295628b5921f0a6827
 
-sha1 for original file is:
+SHA1 for original file is:
 
     C:\Users\lclevy\Desktop\afti2>sha1sum "c:\Perl64\bin\perl516.dll"
     \47f8c6549a641e2f97b121295628b5921f0a6827 *c:\\Perl64\\bin\\perl516.dll
 
-With **istat** on file starting at cluster 8 (/adencrypt_gui.exe), here cluster are contiguous:
+With **istat** on file starting at cluster 8 (/adencrypt_gui.exe), here clusters are contiguous:
 
     >python exfat_dump.py istat exfat12.001 8
     clusterList: [8:121]
