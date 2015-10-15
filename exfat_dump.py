@@ -400,7 +400,7 @@ def parseDir( f, vbr, clusterData ):
       vEntry['modified']=vEntry['created']=vEntry['accessed']=vEntry['modified10ms']=vEntry['created10ms']=None
       vEntry['entryAttr'] = 0
       vEntry['secondaryCount']=0
-      vEntry['noFatChain'] = True
+      vEntry['noFatChain'] = False #chained in FAT
       if type==EXFAT_DIRRECORD_BITMAP:
         vbr[ 'bitmapCluster' ] = entryCluster
         vbr[ 'bitmapLength' ] = dataLen   
@@ -509,10 +509,9 @@ def fls( f, vbr, dir, path, recur, long=False ):
 #called first time with rootdir content        
 def getFiles( f, vbr, dir, globalList ):
   for entry in dir:
-    #print entry
-    if entry['type']==EXFAT_DIRRECORD_FILEDIR:    
+    #we can do istat on Bitmap and Upcase too
+    if entry['type']==EXFAT_DIRRECORD_FILEDIR or entry['type']==EXFAT_DIRRECORD_BITMAP or entry['type']==EXFAT_DIRRECORD_UPCASE:    
       globalList.append( entry ) #add each entry individually, as tree leaves
-      #print getDirEntry( entry )
       if isDir( entry ):
         subdir = readDir( f, vbr, entry ) #dir clusters
         getFiles( f, vbr, subdir, globalList )
@@ -526,7 +525,7 @@ def contentStat( f, vbr, globalList ):
     if isDir(entry):
       dir = dir + 1
       dirContentSize = dirContentSize + entry['dataLen']
-    else:
+    elif entry['type']==EXFAT_DIRRECORD_FILEDIR: #do not count EXFAT_DIRRECORD_BITMAP and 
       files = files + 1  
       filesContentSize = filesContentSize + entry['dataLen']
   print 'Directories: %d (%d Kb)' % (dir, dirContentSize/1024),
@@ -600,7 +599,7 @@ def istat( f, vbr, entry ):
     clusterList = getChainedClustersList( f, vbr, cluster )
     print 'clusterList:', clusterList  
 
-print 'exFAT_dump v0.2 (lclevy@free.fr, https://github.com/lclevy/)'
+print 'exFAT_dump v0.3 (lclevy@free.fr, https://github.com/lclevy/)'
 print
     
 if len(sys.argv)<3:
@@ -760,11 +759,14 @@ if command=='icat' or command=='istat':
         print 'icat invalid on directory entry'  
       else:  
         if entrySize>0:
-          fout = open( unicode2ascii(entry['name']), 'wb')
+          outFileName = unicode2ascii(entry['name'])
+          fout = open( outFileName, 'wb')
+          print 'extracting %s, %d bytes' % ( outFileName, entrySize)
           extractContent( f, vbr, entry, fout )
           fout.close()  
           if hashFile:
-            fin = open( unicode2ascii(entry['name']), 'rb')
+            print 'sha1=',
+            fin = open( outFileName, 'rb')
             content = fin.read()
             print sha1(content).hexdigest()
             fin.close()
